@@ -1,0 +1,36 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[[source]]
+url = "https://download.pytorch.org/whl/"
+verify_ssl = true
+name = "downloadpytorch"
+
+[packages]
+numpy = "*"
+black = "*"
+ipykernel = "*"
+torch = {version = "==1.11.0+cu113", index = "downloadpytorch"}
+torchvision = {version = "==0.12.0+cu113", index = "downloadpytorch"}
+scikit-learn = "*"
+pandas = "*"
+matplotlib = "*"
+seaborn = "*"
+plotly = "*"
+tqdm = "*"
+ipywidgets = "*"
+scipy = "*"
+watermark = "*"
+albumentations = "*"
+hydra-core = "*"
+unidecode = "*"
+augraphy = "*"
+opencv-contrib-python = "*"
+dvc = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.10"
