@@ -28,7 +28,7 @@ hydra-core = "*"
 unidecode = "*"
 augraphy = "*"
 opencv-contrib-python = "*"
-dvc = "*"
+dvc = {extras = ["gdrive"], version = "*"}
 
 [dev-packages]
 
