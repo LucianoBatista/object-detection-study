@@ -28,3 +28,32 @@ The general approach to train a DL model for object detection is:
 - Predict
 - Evaluation
 - Save model and logs
+
+Important to understand:
+
+- how to load data into Dataset classes using pytorch
+
+# Basic file structure:
+
+The xml_to_csv script works if your data is on PASCAL VOC format. COCO format is given in a json file.
+
+- data:
+  - train
+    - .jpg
+    - .xml
+  - test
+    - .jpg
+    - .xml
+  - test_labels.csv
+  - train_labels.csv
+  - xml_to_csv.py
+- outputs:
+- src
+  - config.py
+  - datasets.py
+  - inference.py
+  - model.py
+  - pipeline.py
+  - utils.py
+- test_data
+- test_predictions
