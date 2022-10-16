@@ -2,6 +2,21 @@
 
 - `pipenv install dvc`
 - `dvc init`
+- `dvc rmeote add --local <name> <url>`
+
+Those params for authentication will be setup like that:
+
+- `dvc remote modify --local <name> <param> <value>`
+
+Be aware that we need to pass those values on the with the --local param. This is because doing this way we're not exposing sensible information on the repo.
+
+- `dvc remote default --local <name>`
+
+From now on you can add your data, or your models, or anything you want to track and run:
+
+- `dvc add`: dvc will create a `<name_file_dir>.dvc`, and save a hash that correspond to that data.
+- `dvc push`: will send your files to this remote repository (s3, google drive, gcp...)
+- `dvc pull`: will bring all the data from a specific point in time, described on `.dvc` file
 
 # Training
 
