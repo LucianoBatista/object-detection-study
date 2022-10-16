@@ -13,6 +13,3 @@ The general approach to train a DL model for object detection is:
 - Predict
 - Evaluation
 - Save model and logs
-
-id_client: `97353984025-567tbsb6920ap5fcnqpcdup3u36femoj.apps.googleusercontent.com`
-chave: `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`
